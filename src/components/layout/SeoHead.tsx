@@ -11,6 +11,7 @@ const defaultMeta = {
     "Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest",
   // change base url of your web (without '/' at the end)
   url: "https://next-landing-vpn.vercel.app",
+  date: '2023-09-21',
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
@@ -36,19 +37,14 @@ const defaultMeta = {
  * @example
  * <SeoHead title="Page's Title" />
  */
-const SeoHead = (props) => {
+const SeoHead = () => {
   const pathname = usePathname()
   const meta = {
     ...defaultMeta,
-    ...props,
   };
 
   // Use siteName if there is templateTitle
   // but show full title if there is none
-  meta.title = props.templateTitle
-    ? `${props.templateTitle} | ${meta.siteName}`
-    : meta.title;
-
   return (
     <Head>
       <title>{meta.title}</title>

@@ -79,7 +79,7 @@ const Testimoni = ({
       },
     ],
   };
-  const [sliderRef, setSliderRef] = useState(null);
+  const [sliderRef, setSliderRef] = useState<null|Slider>(null);
 
   return (
     <>
