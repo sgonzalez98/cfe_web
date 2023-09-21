@@ -2,16 +2,16 @@ const purgecss = [
   "@fullhuman/postcss-purgecss",
   {
     content: [
-      "./pages/*.js",
-      "./pages/**/*.js",
-      "./components/*.js",
-      "./components/**/*.js",
+      "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     whitelistPatterns: [/^slick-/],
     defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
 ];
 module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   plugins: [
     "postcss-import",
     "tailwindcss",
