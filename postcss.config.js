@@ -9,9 +9,6 @@ const purgecss = [
   },
 ];
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
   plugins: [
     "postcss-import",
     "tailwindcss",
