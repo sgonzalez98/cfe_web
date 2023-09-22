@@ -1,7 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "../styles/tailwind.css";
-import "../styles/slick.css";
 import type { Metadata } from "next";
 import SeoHead from "@/components/layout/SeoHead";
 

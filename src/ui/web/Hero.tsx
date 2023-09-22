@@ -1,6 +1,7 @@
+"use client";
+
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 import { motion } from "framer-motion";
 import ScrollAnimationWrapper from "@/components/layout/ScrollAnimationWrapper";
 import getScrollAnimation from "@/utils/getScrollAnimation";
@@ -49,7 +50,6 @@ const Hero = ({
                 alt="VPN Illustrasi"
                 width={612}
                 height={383}
-                layout="responsive"
               />
             </motion.div>
           </div>

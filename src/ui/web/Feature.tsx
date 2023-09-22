@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React, { useMemo } from "react";
 import { motion } from "framer-motion";
@@ -27,7 +29,6 @@ const Feature = () => {
             <Image
               src="/assets/Illustration2.png"
               alt="VPN Illustrasi"
-              layout="responsive"
               quality={100}
               height={414}
               width={508}

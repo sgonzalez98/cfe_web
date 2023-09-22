@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useMemo } from "react";
 import Image from "next/image";
 import Testimoni from "./Testimoni";
@@ -16,7 +18,7 @@ const Pricing = () => {
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="Celulas"
     >
-      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -206,8 +208,8 @@ const Pricing = () => {
               Estos son algunos de los comentarios de nuestros fieles
             </motion.p>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
-            <motion.div variants={scrollAnimation}>
+          <ScrollAnimationWrapper className="w-full py-12">
+            <motion.div variants={scrollAnimation} className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
               <Testimoni />
             </motion.div>
           </ScrollAnimationWrapper>

@@ -11,7 +11,7 @@ const defaultMeta = {
     "Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest",
   // change base url of your web (without '/' at the end)
   url: "https://next-landing-vpn.vercel.app",
-  date: '2023-09-21',
+  date: "2023-09-21",
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
@@ -38,7 +38,7 @@ const defaultMeta = {
  * <SeoHead title="Page's Title" />
  */
 const SeoHead = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const meta = {
     ...defaultMeta,
   };
@@ -48,12 +48,6 @@ const SeoHead = () => {
   return (
     <Head>
       <title>{meta.title}</title>
-
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
-        rel="stylesheet"
-      />
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${meta.url}${pathname}`} />
@@ -93,6 +87,12 @@ const SeoHead = () => {
       />
       {/* Accent color on supported browser */}
       <meta name="theme-color" content="#F53838" />
+
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+        rel="stylesheet"
+      />
     </Head>
   );
 };
